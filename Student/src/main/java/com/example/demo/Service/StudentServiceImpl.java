@@ -28,15 +28,15 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
-	public void delete(Integer id) {
+	public void delete(Integer rollno) {
 		// TODO Auto-generated method stub
-		sr.deleteById(id);
+		sr.deleteById(rollno);
 	}
 
 	@Override
-	public void update(Student Student, Integer id) {
+	public void update(Student Student, Integer rollno) {
 		// TODO Auto-generated method stub
-		Student.setRollno(id);
+		Student.setRollno(rollno);
 		sr.save(Student);
 	}
 

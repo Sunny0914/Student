@@ -12,9 +12,9 @@ public interface StudentService {
 
 	public List<Student> display();
 
-	public void delete(Integer id);
+	public void delete(Integer rollno);
 
-	public void update(Student Student, Integer id);
+	public void update(Student Student, Integer rollno);
 	
 	public List<Student> searchbyname(String name, String grade , String division , String result);
 	
