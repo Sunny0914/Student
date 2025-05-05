@@ -4,5 +4,5 @@ RUN mvn package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/Student-0.0.1-SNAPSHOT.jar Student.jar
-EXPOSE 8081
+EXPOSE 8085
 ENTRYPOINT ["java","-jar","Student.jar"]
